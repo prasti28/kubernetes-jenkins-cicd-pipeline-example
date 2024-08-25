@@ -6,7 +6,7 @@ def IMAGE_NAME = 'helloworld'
 def IMAGE_REGISTRY = "${REGISTRY_URL}/${OWNER}/${REPO_NAME}/${IMAGE_NAME}"
 def IMAGE_BRANCH_TAG = "${IMAGE_REGISTRY}:${env.BRANCH_NAME}"
 
-def REGISTRY_CREDENTIALS = 'prasti28'
+def REGISTRY_CREDENTIALS = 'prasti28-dockerhub'
 def PULL_SECRET = "registry-${REGISTRY_CREDENTIALS}"
 
 def DOCKER_HOST_VALUE = 'tcp://dind.default:2375'
